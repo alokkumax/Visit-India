@@ -121,6 +121,8 @@ li {
     width: 40%;
     color: white;
     font-family: 'Nunito',sans-serif;
+    display: block;
+
 }
 .hero-content {
     display: none;
