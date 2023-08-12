@@ -86,20 +86,31 @@ li {
   background-size: cover;
 }
 
-.bg1 {
-  background-image: url("/images/bg222.jpg");
+.Kedarnath {
+  height: 85vh;
+  background-size: cover;
+  background-image: url("/images/Kedarnath.jpg");
+  /* transition: ; */
 }
-.bg2 {
-  background-image: url("/images/bg1.jpg");
+.Varanasi {
+  height: 85vh;
+  background-size: cover;
+  background-image: url("/images/Varanasi.jpg");
 }
-.bg3 {
-  background-image: url("/images/bg6.jpg");
+.Vaishodevi {
+  height: 85vh;
+  background-size: cover;
+  background-image: url("/images/Vaishnodevi.jpg");
 }
-.bg4 {
-  background-image: url("/images/bg4.jpg");
+.Vrindavan {
+  height: 85vh;
+  background-size: cover;
+  background-image: url("/images/Vrindavan.jpg");
 }
-.bg5 {
-  background-image: url("/images/bg5.jpg");
+.Dakshineswar {
+  height: 85vh;
+  background-size: cover;
+  background-image: url("/images/Dakshineshwar.jpg");
 }
 .filter {
   height: 85vh;
@@ -109,58 +120,116 @@ li {
   justify-content: space-between;
 }
 
-.filter > :first-child {
-  padding: 18rem 8rem 0rem;
+.div-hero {
+  padding: 17rem 8rem 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 100%;
 }
-
-
-.active-hero-content{
-    width: 40%;
-    color: white;
-    font-family: 'Nunito',sans-serif;
-    display: block;
-
+.active-hero-content {
+  width: 40%;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  display: block;
+}
+.active-hero-content > h1 {
+  font-size: 60px;
+  margin: 0px;
+  text-shadow: 1px 1px #c2c2c2;
+}
+.active-hero-content > p {
+  font-size: 20px;
+  color: #fcfcfc;
+  margin-bottom: 2rem;
+}
+.active-hero-content > button {
+  font-size: 20px;
+  color: #fcfcfc;
+  background-color: transparent;
+  border: 1px solid #fcfcfc;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-family: Poppins;
 }
 .hero-content {
-    display: none;
-    width: 40%;
-    color: white;
-    font-family: 'Nunito',sans-serif;
+  display: none;
+  width: 40%;
+  color: white;
+  font-family: "Nunito", sans-serif;
 }
-
-
-
 .hero-content > h1 {
-    font-size: 60px;
-    margin: 0px;
-    text-shadow: 1px 1px #c2c2c2;
+  font-size: 60px;
+  margin: 0px;
+  text-shadow: 1px 1px #c2c2c2;
 }
 .hero-content > p {
-    font-size: 20px;
-    color: #fcfcfc;
-    margin-bottom: 2rem ;
-    
+  font-size: 20px;
+  color: #fcfcfc;
+  margin-bottom: 2rem;
 }
 .hero-content > button {
-    font-size: 20px;
-    color: #fcfcfc;
-    background-color: transparent;
-    border: 1px solid #fcfcfc;
-    padding: 0.5rem 1.5rem;
-    border-radius: 20px;
-    font-family: Poppins;
-    
+  font-size: 20px;
+  color: #fcfcfc;
+  background-color: transparent;
+  border: 1px solid #fcfcfc;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-family: Poppins;
 }
-
-
-
-
 
 .caro {
   /* background-color: blue; */
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.image-container {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.image-container > img{
+  border-radius: 25px;
+  width: 300px;
+  object-fit: cover;
+  object-position: 50% 0;
+  position: absolute;
+  transition: all 0.3s ease-in;
+
+}
+.img1 {
+  height: 100%;
+  left: 0%;
+  z-index: 5;
+}
+.img2 {
+  height: 90%;
+  left: 50%;
+  z-index: 4;
+}
+.img3 {
+  height: 80%;
+  left: 90%;
+  z-index: 3;
+}
+.img4 {
+  height: 70%;
+  left: 130%;
+  z-index: 2;
+}
+.img5 {
+  height: 60%;
+  left: 170%;
+  z-index: 1;
 }
 .filter > :last-child {
   display: flex;
@@ -175,7 +244,7 @@ li {
   margin: 0;
   padding: 0;
   gap: 4%;
-  border-top: 1px solid gray;
+  border-top: 1px solid rgb(119, 119, 119);
 }
 .hero-bottom-tab {
   display: flex;
