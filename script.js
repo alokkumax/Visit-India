@@ -6,8 +6,9 @@ $("img").click(function(e){
     var prev = $(".img1").attr("class");
     var clicked = $(this).attr("class");
     var order = clicked.slice(-1);;
-    console.log(prev);
+    // console.log(prev);
     console.log(order);
+    // console.log(order);
     // Inter Changer images
     $(".img1").addClass(clicked)
     $(".img1").removeClass(prev)
@@ -15,12 +16,11 @@ $("img").click(function(e){
     $(this).removeClass(clicked);
     $(this).addClass(prev);
     //LOOP way 
-    updateSlide(clicked)
+    // swap(order);
 })
-function updateSlide(clicked){
+function swap(a, b){
 
 }
-
 function updateDiv(clickedHTML){
     var currDiv = $(".active-hero-content"); // current Active Div
     if(clickedHTML === currDiv.attr("id")){
