@@ -1,5 +1,3 @@
-
-  
 $(".hero-bottom-tab").click(function(e){
     updateDiv($(this).html());// sending as element's HTML
     updateActiveTab($(this)); // Sending as a e
