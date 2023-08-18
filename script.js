@@ -14,11 +14,21 @@ $("img").click(function(e){
 
     var prev = $(".img"+(order-1)).attr("class");
     console.log(prev);
-    $("."+prev).addClass(clicked);
-    $("."+prev).removeClass(prev);
 
-    $(this).removeClass(clicked);
-    $(this).addClass(prev);
+    // order = 3
+    for(let i = order; i>1;i--){
+        $(".img"+(i-1)).addClass("img"+i);
+        $(".img"+(i-1)).removeClass("img"+(i-1));
+    
+        $(".img"+i).removeClass("img"+i);
+        $(".img"+i).addClass("img"+(i-1));
+    }
+
+    // $("."+prev).addClass(clicked);
+    // $("."+prev).removeClass(prev);
+
+    // $(this).removeClass(clicked);
+    // $(this).addClass(prev);
 
 
     //LOOP way 
