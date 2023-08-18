@@ -3,18 +3,24 @@ $(".hero-bottom-tab").click(function(e){
     updateActiveTab($(this)); // Sending as a e
 })
 $("img").click(function(e){
-    var prev = $(".img1").attr("class");
+    // var prev = $(".img1").attr("class");
     var clicked = $(this).attr("class");
     var order = clicked.slice(-1);;
     // console.log(prev);
     console.log(order);
     // console.log(order);
-    // Inter Changer images
-    $(".img1").addClass(clicked)
-    $(".img1").removeClass(prev)
+
+    // Inter SWAP Changer images
+
+    var prev = $(".img"+(order-1)).attr("class");
+    console.log(prev);
+    $("."+prev).addClass(clicked);
+    $("."+prev).removeClass(prev);
 
     $(this).removeClass(clicked);
     $(this).addClass(prev);
+
+
     //LOOP way 
     // swap(order);
 })
