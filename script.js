@@ -12,9 +12,7 @@ $("img").click(function(e){
     $(this).removeClass(clicked);
     $(this).addClass(prev);
 })
-function swap(a, b){
 
-}
 function updateDiv(clickedHTML){
     var currDiv = $(".active-hero-content"); // current Active Div
     if(clickedHTML === currDiv.attr("id")){
