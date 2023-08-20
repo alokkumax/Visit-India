@@ -1,33 +1,14 @@
 $(".hero-bottom-tab").click(function(e){
     updateDiv($(this).html());// sending as element's HTML
     updateActiveTab($(this)); // Sending as a e
-    // updateImage()
 })
 $("img").click(function(e){
     var prev = $(".img1").attr("class");
     var clicked = $(this).attr("class");
     var order = clicked.slice(-1);;
-    // console.log(prev);
     console.log(order);
-    // console.log(order);
-
-    // Inter SWAP Changer images
-
-    // var prev = $(".img"+(order-1)).attr("class");
-    // console.log(prev);
-
-    // // order = 3
-    // for(let i = order; i>1;i--){
-    //     $(".img"+(i-1)).addClass("img"+i);
-    //     $(".img"+(i-1)).removeClass("img"+(i-1));
-    
-    //     $(".img"+i).removeClass("img"+i);
-    //     $(".img"+i).addClass("img"+(i-1));
-    // }
-
     $("."+prev).addClass(clicked);
     $("."+prev).removeClass(prev);
-
     $(this).removeClass(clicked);
     $(this).addClass(prev);
 })
