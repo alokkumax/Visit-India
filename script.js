@@ -30,10 +30,6 @@ $("img").click(function(e){
 
     $(this).removeClass(clicked);
     $(this).addClass(prev);
-
-
-    //LOOP way 
-    // swap(order);
 })
 function swap(a, b){
 
