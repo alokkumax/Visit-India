@@ -11,6 +11,7 @@ nav {
   position: fixed;
   z-index: 2;
   width: 100%;
+
 }
 .nav-first {
   /* background-color: rgb(85, 33, 168); */
@@ -25,6 +26,7 @@ nav {
 }
 .nav-first > :last-child {
   font-size: 14px;
+  color: #5c5c5c;
   text-decoration: none;
 }
 
@@ -38,13 +40,11 @@ nav {
 details[open] summary {
   transform: rotateZ(180deg);
   transition: 300ms ease-in-out;
-
 }
-/* details[!=open] summary {
-  transform: rotateZ(360deg);
-  transition: 300ms ease-out;
-
-} */
+details summary{
+  transform: rotateZ(0deg);
+  transition: 300ms ease-in-out;
+}
 summary{
   list-style: none;
 }
@@ -58,6 +58,7 @@ summary{
   transition: 500ms ease-in;
   border-radius: 6px;
   font-size: 12px;
+  z-index: 5;
 }
 .lang-list > ul {
   padding: 0px 0px;
@@ -80,6 +81,8 @@ summary{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  
 }
 .nav-second > div {
   display: flex;
@@ -122,6 +125,83 @@ li {
 .nav-second > :last-child > a:hover {
   cursor: pointer;
 }
+/* Nav-Details Section */
+
+.nav-tab{
+}
+.active-nav-1{
+  display:block;
+  color: aqua;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  outline: 3px solid rgb(240, 37, 54);
+  background-color: rgb(224, 77, 77);
+  width: 100%;
+  height: 30rem;
+}
+.active-nav-2{
+  display:block;
+  color: aqua;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  outline: 3px solid rgb(99, 50, 214);
+  background-color: rgb(99, 50, 214);
+  width: 100%;
+  height: 30rem;
+}
+.active-nav-3{
+  display:block;
+  color: aqua;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  outline: 3px solid rgb(99, 50, 214);
+  background-color: rgb(99, 50, 214);
+  width: 100%;
+  height: 30rem;
+}
+
+.nav-detail-1{
+    display:none;
+    color: aqua;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    outline: 3px solid rgb(240, 37, 54);
+    background-color: rgb(224, 77, 77);
+    width: 100%;
+    height: 30rem;
+}
+.nav-detail-2{
+  display:none;
+  color: aqua;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  outline: 3px solid rgb(99, 50, 214);
+  background-color: rgb(99, 50, 214);
+  width: 100%;
+  height: 30rem;
+}
+.nav-detail-3{
+  display:none;
+  color: aqua;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  outline: 3px solid rgb(250, 151, 58);
+  background-color: rgb(250, 151, 58);
+  width: 100%;
+  height: 30rem;
+}
+
+
+
+
+
+
 
 /* HERO section */
 .bg {
@@ -322,7 +402,7 @@ li {
 
 /* SECTION VAR */
 header{
-  padding: 4rem 8rem 2rem;
+  padding: 4rem 8rem 1rem;
   font-size: 40px;
   font-weight: 500;
   font-family: 'Poppins',sans-serif;
@@ -340,11 +420,12 @@ header{
   flex-direction: row;
 }
 .var-card{
-  width: 30%;
-  height: 700px;
+  width: 31%;
+  height: 670px;
   background-color: blue;
   border-radius:25px;
   position: relative;
+  
 }
 .var-card > img{
   width: 100%;
@@ -361,7 +442,7 @@ header{
   flex-direction: column;
 }
 .var-card > :last-child > span{
-  font-size: 35px;
+  font-size: 30px;
   color: #fcfcfc;
 }
 

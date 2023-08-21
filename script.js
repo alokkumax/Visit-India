@@ -39,3 +39,12 @@ function updateActiveTab(clickedTab){
         currTab = $(".active-bottom-tab").html(); // updating new Tab
     }
 }
+
+// NAV TAB 
+$(".nav-tab").click(function(e){
+    console.log($(this).attr("id"));
+    updateNavMenu($(this).attr("id"));
+})
+function updateNavMenu(selectedNav){
+    
+}
