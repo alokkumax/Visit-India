@@ -71,9 +71,6 @@ summary{
 .lang-list > ul  :hover{
   background-color: rgba(243, 243, 243, 0.808);
 }
-
-
-
 .nav-second {
   padding-inline: 8rem;
   padding-block: 0.5rem;
@@ -194,13 +191,6 @@ li {
   width: 100%;
   height: 30rem;
 }
-
-
-
-
-
-
-
 /* HERO section */
 .bg {
   height: 85vh;
@@ -242,7 +232,6 @@ li {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .div-hero {
   padding: 15rem 8rem 4rem;
   display: flex;
