@@ -126,7 +126,6 @@ li {
   cursor: pointer;
 }
 /* Nav-Details Section */
-
 .nav-tab{
 }
 .active-nav-1{
@@ -162,7 +161,6 @@ li {
   width: 100%;
   height: 30rem;
 }
-
 .nav-detail-1{
     display:none;
     color: aqua;
