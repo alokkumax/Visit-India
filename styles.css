@@ -466,6 +466,22 @@ header{
   color: #fff!important;
   cursor: pointer;
 }
+.btn-white{
+  background-color: hsl(0, 0%, 100%);
+  color: #000000;
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: 0px transparent;
+  font-size: 16px;
+  font-family: Poppins;
+  width: fit-content;
+  transition: 500ms;
+}
+.btn-white:hover{
+  background-color: hsl(0, 0%, 85%);
+  color: #000000!important;
+  cursor: pointer;
+}
 
 /* EXPERIENCE section */
 .experience{
@@ -577,12 +593,13 @@ hr{
 
 .banner{
   width: 100%;
-  background-color:  rgba(219, 138, 16, 0.945);
+  background-color:  rgba(209, 127, 4, 0.945);
   height: 25vh;
   border-radius: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 .banner > div{
   display: flex;
@@ -593,13 +610,6 @@ hr{
   align-items: start;
   color: #fff;
 
-}
-
-.banner > div >div{
-  margin-left: 70px;
-}
-.banner > div >div > h1{
-  margin: 2px 0px 0px 0px;
 }
 a{
   text-decoration: none;
@@ -612,10 +622,19 @@ a{
   border-radius: 0px 30px 30px 0px;
 
 }
-.banner > span{
-  /* position: absolute; */
-  top: 0;
-  color: rgb(214, 0, 0);
+.banner > .bannerC{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  width: 90%;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+  align-items:center;
+  height: 100%;
+}
+.bannerC > div > h1{
+  margin: 2px 0px;
 }
 .bannerHover:hover{
   transform: 500ms;
