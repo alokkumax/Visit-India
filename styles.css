@@ -158,6 +158,7 @@ li {
   background-color: rgb(99, 50, 214);
   width: 100%;
   height: 30rem;
+  transition: 1000ms ease-in-out;
 }
 .active-nav-3{
   display:block;
