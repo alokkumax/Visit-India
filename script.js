@@ -48,11 +48,31 @@ function updateActiveTab(clickedTab){
 // NAV TAB 
 $(".nav-tab").click(function(e){
     console.log($(this).attr("id"));
-    updateNavMenu($(this).attr("id"));
+    if($("#item"+$(this).attr("id")).hasClass("active-nav-"+$(this).attr("id"))){
+        $("#item"+$(this).attr("id")).removeClass();
+        $(this).removeClass();
+
+    }
+    // else if($(this).hasClass("active-tab"+$(this).attr("id"))){
+    //     $(this).removeClass();
+    // }
+    else{
+        updateNavMenu($(this).attr("id"));
+        updateNavTitle($(this).attr("id"));
+    }
+  
 })
 function updateNavMenu(selectedNav){
-    if($("#item"+selectedNav))
-    $("#item"+selectedNav).removeClass();
+    $("#item"+1).removeClass();
+    $("#item"+2).removeClass();
+    $("#item"+3).removeClass();
 
     $("#item"+selectedNav).addClass("active-nav-"+selectedNav);
+}
+function updateNavTitle(selectedNavTitle){
+    var clickedId =  selectedNavTitle.slice(-1);
+    $("#"+1).removeClass();
+    $("#"+2).removeClass();
+    $("#"+3).removeClass();
+    $("#"+clickedId).addClass("active-tab"+clickedId);
 }

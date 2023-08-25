@@ -125,9 +125,21 @@ li {
 /* Nav-Details Section */
 .nav-tab{
 }
+.active-tab1{
+  color: red;
+  border-bottom: 2px solid red;
+}
+.active-tab2{
+  color: rgb(99, 50, 214);
+  border-bottom: 2px solid rgb(99, 50, 214);
+}
+.active-tab3{
+  color: rgb(17, 199, 0);
+  border-bottom: 2px solid rgb(17, 199, 0);
+}
 .active-nav-1{
   display:block;
-  color: aqua;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 100%;
   left: 0%;
@@ -138,7 +150,7 @@ li {
 }
 .active-nav-2{
   display:block;
-  color: aqua;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 100%;
   left: 0%;
@@ -149,12 +161,12 @@ li {
 }
 .active-nav-3{
   display:block;
-  color: aqua;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 100%;
   left: 0%;
-  outline: 3px solid rgb(99, 50, 214);
-  background-color: rgb(99, 50, 214);
+  outline: 3px solid rgb(17, 199, 0);
+  background-color: rgb(17, 199, 0);
   width: 100%;
   height: 30rem;
 }
