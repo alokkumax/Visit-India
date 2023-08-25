@@ -5,12 +5,17 @@ $(".hero-bottom-tab").click(function(e){
 $("img").click(function(e){
     var prev = $(".img1").attr("class");
     var clicked = $(this).attr("class");
+    var clickedName =  $(this).attr("id")
+    console.log(clickedName)
+  
     var order = clicked.slice(-1);;
     console.log(order);
     $("."+prev).addClass(clicked);
     $("."+prev).removeClass(prev);
     $(this).removeClass(clicked);
     $(this).addClass(prev);
+    updateDiv(clickedName)
+    updateActiveTab(clickedName)
 })
 
 function updateDiv(clickedHTML){
@@ -46,5 +51,8 @@ $(".nav-tab").click(function(e){
     updateNavMenu($(this).attr("id"));
 })
 function updateNavMenu(selectedNav){
-    
+    if($("#item"+selectedNav))
+    $("#item"+selectedNav).removeClass();
+
+    $("#item"+selectedNav).addClass("active-nav-"+selectedNav);
 }

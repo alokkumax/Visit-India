@@ -247,22 +247,18 @@ li {
 }
 .active-hero-content > h1 {
   font-size: 60px;
-  margin: 0px;
+  margin: 5rem 0px 0rem;
   text-shadow: 1px 1px #c2c2c2;
+  font-family: Poppins;
+
 }
 .active-hero-content > p {
   font-size: 20px;
   color: #fcfcfc;
-  margin-bottom: 2rem;
+  margin: 0rem 0px 2rem;
+
 }
 .active-hero-content > button {
-  font-size: 20px;
-  color: #fcfcfc;
-  background-color: transparent;
-  border: 1px solid #fcfcfc;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
-  font-family: Poppins;
 }
 .hero-content {
   display: none;
@@ -525,6 +521,7 @@ color: #000;
   justify-content: space-between;
   border-radius: 30px;
 }
+
 .exp-card:hover{transform: 500ms;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -588,7 +585,10 @@ hr{
   margin: 0px 0px;
   font-weight: 500;
 }
-
+/* // Gallery */
+.gallery{
+  text-align: center;
+}
 /* //BAnner */
 
 .banner{
@@ -639,4 +639,18 @@ a{
 .bannerHover:hover{
   transform: 500ms;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* //Maps */
+
+.maps{
+  text-align: center;
+}
+
+/* Footer */
+
+.border{
+  padding: 1rem  0px;
+  width: 100%;
+  fill: #000;
 }
