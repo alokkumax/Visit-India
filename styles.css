@@ -88,6 +88,8 @@ summary{
   align-items: center;
   font-size: 16px;
   font-family: Poppins;
+  /* position: relative; */
+
 }
 .nav-second > div > img {
   width: 4rem;
@@ -123,19 +125,103 @@ li {
   cursor: pointer;
 }
 /* Nav-Details Section */
+
+.sub-menu-wrap{
+  display:flex;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background-color: rgb(97, 26, 138);
+  width: 100%;
+  height: 0rem;
+  max-height: 0rem;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  transition: height 0.5s ease-in-out;
+}
+.sub-menu-wrap.open-menu{
+  height: 35rem;
+  max-height: 40rem;
+}
+
+.menu{
+  /* background-color: aqua; */
+  display: flex;
+  flex: 3;
+  justify-content: start;
+  padding: 0rem 0rem 5rem 10rem;
+  align-items: center;
+
+}
+.menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 0rem;
+}
+.menu > ul > li{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  transition: transform 0.4s;
+}
+.menu > ul > li:hover{
+  transform: translateX(7px);
+}
+/* #icon1{
+  display: none;
+} */
+.icon{
+  display: none!important;
+}
+.menuDesc{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(187, 187, 187);
+  display: flex;
+  flex: 5;
+}
+
+
+
+
+.arr{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid red;
+
+  position: absolute;
+  top: 90%;
+  left: 14.5%;
+}
 .nav-tab{
+  height: 0rem;
+  max-height: 0rem;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  transition: height 0.5s ease-in-out;
 }
 .active-tab1{
-  color: red;
-  border-bottom: 2px solid red;
+  color: rgb(97, 26, 138);
+  font-weight: 500;
+  /* border-bottom: 2px solid red; */
 }
+
 .active-tab2{
+  font-weight: 500;
+
   color: rgb(99, 50, 214);
-  border-bottom: 2px solid rgb(99, 50, 214);
+  /* border-bottom: 2px solid rgb(99, 50, 214); */
 }
 .active-tab3{
   color: rgb(17, 199, 0);
-  border-bottom: 2px solid rgb(17, 199, 0);
+  font-weight: 500;
+
+  /* border-bottom: 2px solid rgb(17, 199, 0); */
 }
 .active-nav-1{
   display:block;
@@ -146,7 +232,8 @@ li {
   outline: 3px solid rgb(240, 37, 54);
   background-color: rgb(224, 77, 77);
   width: 100%;
-  height: 30rem;
+  height: 40rem;
+  max-height: 35rem;
 }
 .active-nav-2{
   display:block;

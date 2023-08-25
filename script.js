@@ -75,3 +75,6 @@ function updateNavTitle(selectedNavTitle) {
   $("#" + 3).removeClass();
   $("#" + clickedId).addClass("active-tab" + clickedId);
 }
+function toggleMenu(){
+  $("#subMenu").toggleClass("open-menu");
+}

@@ -1,429 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit India</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 
-    <!-- TweenMax - GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
-    <!-- EMAIL  -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- FavIcon -->
-    <link rel="icon" type="image/x-icon" href="/images/indiap.png" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav-first">
-        <span>Contact us</span>
-        <span
-          >
-          <i class="fa-solid fa-earth-americas"></i>
-          En
-          <!-- &nbsp; -->
-            <details style="display: inline-block;">
-              <summary><i  class="fa-solid fa-arrow-down language-options"></i>  </summary>
-              <div class="lang-list">
-                <ul>
-                  <li>En - English</li>
-                  <li>हिं - Hindi</li>
-                  <li>मराठी - Marathi</li>
-                  <li>मराठी - Marathi</li>
-                  <li>বাংলা - Bangla</li>
-                  <li>বাংলা - Bangla</li>
-                </ul>
-              </div>
-            </details>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit India</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap"
+    rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+  <!-- TweenMax - GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  <!-- EMAIL  -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- FavIcon -->
+  <link rel="icon" type="image/x-icon" href="/images/indiap.png" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-first">
+      <span>Contact us</span>
+      <span>
+        <i class="fa-solid fa-earth-americas"></i>
+        En
+        <!-- &nbsp; -->
+        <details style="display: inline-block;">
+          <summary><i class="fa-solid fa-arrow-down language-options"></i> </summary>
+          <div class="lang-list">
+            <ul>
+              <li>En - English</li>
+              <li>हिं - Hindi</li>
+              <li>मराठी - Marathi</li>
+              <li>मराठी - Marathi</li>
+              <li>বাংলা - Bangla</li>
+              <li>বাংলা - Bangla</li>
+            </ul>
+          </div>
+        </details>
+
+        </i>
+      </span>
+    </div>
+    <div class="nav-second">
+      <div>
+
+        <img src="./images/indiap.png" alt="" />
+
+        <li onclick="toggleMenu()">See & Do</li>
+        <div id="subMenu" class="sub-menu-wrap">
+          <!-- <img src="border.jpg" alt=""> -->
+          <div class="menu">
+            <ul class="lists">
+              <li id="list1">
+                <!-- <i id="icon1" class="fa-solid fa-minus fa-sm " ></i> -->
+                  Destinations
+                <i id="icon2" class="fa-solid fa-chevron-right fa-sm " ></i>
+              </li>
+              <li id="list2">
+                <!-- <i class="fa-solid fa-minus fa-sm icon"></i> -->
+                  Activities & Attractions
+                <i class="fa-solid fa-chevron-right fa-sm "></i>
+              </li>
+              <li id="list3">
+                <!-- <i class="fa-solid fa-minus fa-sm "></i> -->
+                  Food and Fun  
+                <i class="fa-solid fa-chevron-right fa-sm "></i>
+              </li>
+              <li id="list4">
+                <!-- <i class="fa-solid fa-minus fa-sm "></i> -->
+                  Experiences and Tours
+                <i class="fa-solid fa-chevron-right fa-sm "></i>
+              </li>
+            </ul>
+          </div>
+          <div class="menuDesc">
+          </div>
+        </div>
+
+
+
+
+
+
+        <li id="1" class="nav-tab">See & Do</li>
+
+        <div id="item1" class="" hidden>
+          <div>Content for See & Do= 1</div>
           
-            </i
-        ></span>
+        </div>
+
+        <li id="2" class="nav-tab ">Plan Your Trip</li>
+
+        <div id="item2" class="" hidden>
+          <h4>Content for Plan = 2</h4>
+        </div>
+
+        <li id="3" class="nav-tab">Travel Essentials</li>
+
+        <div id="item3" class="" hidden>
+          <p>Content for TRAVEl = 3</p>
+        </div>
+
+
+
+        <li>Experiences</li>
+        <li>India Map</li>
       </div>
-      <div class="nav-second">
-        <div>
-          <img src="./images/indiap.png" alt="" />
-
-          <li id="1" class="nav-tab">See & Do</li>
-
-          <div id="item1" class="" hidden>
-            <div>Content for See & Do= 1</div>
-          </div>
-
-          <li id="2" class="nav-tab ">Plan Your Trip</li>
-
-          <div id="item2" class=""hidden >
-            <h4>Content for Plan = 2</h4>
-          </div>
-
-          <li id="3" class="nav-tab">Travel Essentials</li>
-
-          <div id="item3" class=""hidden>
-            <p>Content for TRAVEl = 3</p>
-          </div>
-
-          <li>India Calender</li>
-          <li>Experiences</li>
-          <li>India Map</li>
-        </div>
-        <div>
-          <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <span>
-            <i class="fa-regular fa-user"></i>
-          </span>
-          <a href="">
-            <span>Apply for eVisa</span>
-          </a>
-        </div>
+      <div>
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <span>
+          <i class="fa-regular fa-user"></i>
+        </span>
+        <a href="">
+          <span>Apply for eVisa</span>
+        </a>
       </div>
-    </nav>
-  
+    </div>
+  </nav>
 
-    <section class="Kedarnath">
-      <div class="filter">
-        <div class="div-hero">
-          <div id="Kedarnath" class="active-hero-content">
-            <h1>Kedarnath</h1>
-            <p>The highest Shiva temple in the world</p>
-            <span class="btn-sec">Explore</span>
-          </div>
-          <div id="Varanasi" class="hero-content">
-            <h1>Varanasi</h1>
-            <p>Kashi, City of Light</p>
-            <span class="btn-sec">Explore</span>
 
-          </div>
-          <div id="Vaishodevi" class="hero-content">
-            <h1>Vaishodevi</h1>
-            <p>Home of Goddess Parvati</p>
-            <span class="btn-sec">Explore</span>
+  <section class="Kedarnath">
+    <div class="filter">
+      <div class="div-hero">
+        <div id="Kedarnath" class="active-hero-content">
+          <h1>Kedarnath</h1>
+          <p>The highest Shiva temple in the world</p>
+          <span class="btn-sec">Explore</span>
+        </div>
+        <div id="Varanasi" class="hero-content">
+          <h1>Varanasi</h1>
+          <p>Kashi, City of Light</p>
+          <span class="btn-sec">Explore</span>
 
-          </div>
-          <div id="Vrindavan" class="hero-content">
-            <h1>Vrindavan</h1>
-            <p>Birthplace of Lord Krishna</p>
-            <span class="btn-sec">Explore</span>
+        </div>
+        <div id="Vaishodevi" class="hero-content">
+          <h1>Vaishodevi</h1>
+          <p>Home of Goddess Parvati</p>
+          <span class="btn-sec">Explore</span>
 
-          </div>
-          <div id="Dakshineswar" class="hero-content">
-            <h1>Dakshineswar</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              voluptates.
-            </p>
-            <span class="btn-sec">Explore</span>
+        </div>
+        <div id="Vrindavan" class="hero-content">
+          <h1>Vrindavan</h1>
+          <p>Birthplace of Lord Krishna</p>
+          <span class="btn-sec">Explore</span>
 
-          </div>
+        </div>
+        <div id="Dakshineswar" class="hero-content">
+          <h1>Dakshineswar</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            voluptates.
+          </p>
+          <span class="btn-sec">Explore</span>
 
-          <div class="caro">
-            <div class="image-container">
-              <img id="Kedarnath" class="img1" src="/images/Kedarnath.jpg" alt="" />
-              <img id="Varanasi" class="img2" src="/images/Varanasi.jpg" alt="" />
-              <img id="Vaishodevi" class="img3" src="/images/Vaishnodevi.jpg" alt="" />
-              <img id="Vrindavan" class="img4" src="/images/Vrindavan.jpg" alt="" />
-              <img id="Dakshineswar" class="img5" src="/images/Dakshineshwar.jpg" alt="" />
-            </div>
-          </div>
         </div>
 
-        <div>
-          <ul class="tab-div">
-            <li class="active-bottom-tab hero-bottom-tab">Kedarnath</li>
-            <li class="hero-bottom-tab">Varanasi</li>
-            <li class="hero-bottom-tab">Vaishodevi</li>
-            <li class="hero-bottom-tab">Vrindavan</li>
-            <li class="hero-bottom-tab">Dakshineswar</li>
-          </ul>
+        <div class="caro">
+          <div class="image-container">
+            <img id="Kedarnath" class="img1" src="/images/Kedarnath.jpg" alt="" />
+            <img id="Varanasi" class="img2" src="/images/Varanasi.jpg" alt="" />
+            <img id="Vaishodevi" class="img3" src="/images/Vaishnodevi.jpg" alt="" />
+            <img id="Vrindavan" class="img4" src="/images/Vrindavan.jpg" alt="" />
+            <img id="Dakshineswar" class="img5" src="/images/Dakshineshwar.jpg" alt="" />
+          </div>
         </div>
       </div>
-    </section>
 
-    <div class="var">
-      <header>
-        <div><span>See India in a Variety of Ways</span></div>
-      </header>
-      <div class="var-cards">
-        <ul>
-          <a
-            target="_blank"
-            href="https://www.visitsaudi.com/en"
-            class="var-card"
-          >
-            <img src="/images/Kedarnath.jpg" alt="2" />
-            <div>
-              <span>Culture and Heritage</span>
-              <button class="btn-sec">Explore <i class="fa-solid fa-chevron-up fa-rotate-90 fa-sm"></i></button>
-            </div>
-          </a>
-          <a class="var-card">
-            <img src="/images/Varanasi.jpg" alt="2" />
-            <div><span>Sun and Sea</span> <button class="btn-sec">Explore<i class="fa-solid fa-chevron-up fa-rotate-90 fa-sm"></i></button></div>
-          </a>
-
-          <a class="var-card">
-            <img src="/images/Vrindavan.jpg" alt="2" />
-            <div>
-              <span>Nature and Adventure</span> <button class="btn-sec">Explore<i class="fa-solid fa-chevron-up fa-rotate-90 fa-sm"></i></button>
-            </div>
-          </a>
+      <div>
+        <ul class="tab-div">
+          <li class="active-bottom-tab hero-bottom-tab">Kedarnath</li>
+          <li class="hero-bottom-tab">Varanasi</li>
+          <li class="hero-bottom-tab">Vaishodevi</li>
+          <li class="hero-bottom-tab">Vrindavan</li>
+          <li class="hero-bottom-tab">Dakshineswar</li>
         </ul>
       </div>
     </div>
+  </section>
 
-    <div class="experience">
-      <div class="exp-div">
-        <span class="exp-head">What to Experience</span>
-        <a href="">
-          <button class="btn-base">View all</button>
-        </a>
-      </div>
-      <div class="exp-cards">
-        <a href="">
-          <ul>
-            <li class="exp-card">
-              <img src="/images/athura.jpg" alt="" />
-              <div>
-                <div>
-                  <span class="basic">Basic</span>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                  <span class="basic">Starting from</span>
-                  <h4 class="price">RS 500</h4>
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now</span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="exp-card">
-              <img src="/images/Dakshineshwar.jpg" alt="" />
-              <div>
-                <div>
-                  <span class="basic">Basic</span>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                  <span class="basic">Starting from</span>
-                  <div class="off">
-                    <h4 class="price">RS 400</h4>
-                    <div>
-                      <span>RS 500</span>
-                      <span>20% off</span>
-                    </div>
-            
-                  </div>
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now</span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="exp-card">
-              <img src="/images/Kedarnath.jpg" alt="" />
-              <div>
-                <div>
-                  <span class="basic">Basic</span>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                  <span class="basic">Starting from</span>
-                  <h4 class="price">RS 500</h4>
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now </span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="exp-card">
-              <img src="/images/Vrindavan.jpg" alt="" />
-              <div>
-                <div>
-                  <span class="basic">Basic</span>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                  <span class="basic">Starting from</span>
-                  <h4 class="price">RS 500</h4>
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now</span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </a>
-      </div>
-    </div>
-    
- 
-    <div class="gallery">
-      Gallery Image here
-    </div>
-
-    <!-- Banner -->
-    <div class="experience">
-      <a class="bannerHover" href="">
-        <div class="banner">
-
+  <div class="var">
+    <header>
+      <div><span>See India in a Variety of Ways</span></div>
+    </header>
+    <div class="var-cards">
+      <ul>
+        <a target="_blank" href="https://www.visitsaudi.com/en" class="var-card">
+          <img src="/images/Kedarnath.jpg" alt="2" />
           <div>
-            <!-- BG COLOR -->
+            <span>Culture and Heritage</span>
+            <button class="btn-sec">Explore <i class="fa-solid fa-chevron-up fa-rotate-90 fa-sm"></i></button>
           </div>
-          <img src="images/Varanasi.jpg" alt="">
-
-          <div class="bannerC">
-            <div>
-              <span>For a unique experience</span>
-              <h1>Enjoy our Exclusive Offers</h1>
-            </div>
-            <span class="btn-white">Check Now</span>
-          </div>
-
-  
-        </div>
-      </a>
-   
-         
-          
-    </div>
-
-    <!-- Know Before u go -->
-    <div class="experience">
-      <div class="exp-div">
-        <span class="exp-head">Know Before You Go</span>
-        <a href="">
-          <button class="btn-base">View all</button>
         </a>
-      </div>
-      <div class="exp-cards">
-        <a href="">
-          <ul>
-            <li class="exp-card">
-              <img src="/images/athura.jpg" alt="" />
-              <div>
-                <div>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now</span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="exp-card">
-              <img src="/images/Dakshineshwar.jpg" alt="" />
-              <div>
-                <div>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                 
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now</span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="exp-card">
-              <img src="/images/Kedarnath.jpg" alt="" />
-              <div>
-                <div>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now </span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="exp-card">
-              <img src="/images/Vrindavan.jpg" alt="" />
-              <div>
-                <div>
-                  <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
-                </div>
-                <div>
-                  <hr>
-                  <div class="book-now">
-                    <span>Book Now</span>
-                    <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <a class="var-card">
+          <img src="/images/Varanasi.jpg" alt="2" />
+          <div><span>Sun and Sea</span> <button class="btn-sec">Explore<i
+                class="fa-solid fa-chevron-up fa-rotate-90 fa-sm"></i></button></div>
         </a>
-      </div>
-    </div>
 
-    <!-- Banner -->
-    <div class="experience">
-      <a class="bannerHover" href="">
-        <div class="banner">
-
+        <a class="var-card">
+          <img src="/images/Vrindavan.jpg" alt="2" />
           <div>
-            <!-- BG COLOR -->
+            <span>Nature and Adventure</span> <button class="btn-sec">Explore<i
+                class="fa-solid fa-chevron-up fa-rotate-90 fa-sm"></i></button>
           </div>
-          <img src="images/Varanasi.jpg" alt="">
+        </a>
+      </ul>
+    </div>
+  </div>
 
-          <div class="bannerC">
-            <div>
-              <span>You are almost here</span>
-              <h1>Apply for your eVisa today</h1>
-            </div>
-            <span class="btn-white">Check Now</span>
-          </div>
-
-  
-        </div>
+  <div class="experience">
+    <div class="exp-div">
+      <span class="exp-head">What to Experience</span>
+      <a href="">
+        <button class="btn-base">View all</button>
       </a>
-   
-         
-          
     </div>
+    <div class="exp-cards">
+      <a href="">
+        <ul>
+          <li class="exp-card">
+            <img src="/images/athura.jpg" alt="" />
+            <div>
+              <div>
+                <span class="basic">Basic</span>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+                <span class="basic">Starting from</span>
+                <h4 class="price">RS 500</h4>
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now</span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="exp-card">
+            <img src="/images/Dakshineshwar.jpg" alt="" />
+            <div>
+              <div>
+                <span class="basic">Basic</span>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+                <span class="basic">Starting from</span>
+                <div class="off">
+                  <h4 class="price">RS 400</h4>
+                  <div>
+                    <span>RS 500</span>
+                    <span>20% off</span>
+                  </div>
 
-    <!-- Maps -->
-    <div class="maps">
-      Maps
+                </div>
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now</span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="exp-card">
+            <img src="/images/Kedarnath.jpg" alt="" />
+            <div>
+              <div>
+                <span class="basic">Basic</span>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+                <span class="basic">Starting from</span>
+                <h4 class="price">RS 500</h4>
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now </span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="exp-card">
+            <img src="/images/Vrindavan.jpg" alt="" />
+            <div>
+              <div>
+                <span class="basic">Basic</span>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+                <span class="basic">Starting from</span>
+                <h4 class="price">RS 500</h4>
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now</span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </a>
     </div>
+  </div>
 
-    <!-- //Footer -->
-    <img id="br" class="border" src="border.jpg" alt="">
-    <script src="script.js"></script>
-  </body>
+
+  <div class="gallery">
+    Gallery Image here
+  </div>
+
+  <!-- Banner -->
+  <div class="experience">
+    <a class="bannerHover" href="">
+      <div class="banner">
+
+        <div>
+          <!-- BG COLOR -->
+        </div>
+        <img src="images/Varanasi.jpg" alt="">
+
+        <div class="bannerC">
+          <div>
+            <span>For a unique experience</span>
+            <h1>Enjoy our Exclusive Offers</h1>
+          </div>
+          <span class="btn-white">Check Now</span>
+        </div>
+
+
+      </div>
+    </a>
+
+
+
+  </div>
+
+  <!-- Know Before u go -->
+  <div class="experience">
+    <div class="exp-div">
+      <span class="exp-head">Know Before You Go</span>
+      <a href="">
+        <button class="btn-base">View all</button>
+      </a>
+    </div>
+    <div class="exp-cards">
+      <a href="">
+        <ul>
+          <li class="exp-card">
+            <img src="/images/athura.jpg" alt="" />
+            <div>
+              <div>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now</span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="exp-card">
+            <img src="/images/Dakshineshwar.jpg" alt="" />
+            <div>
+              <div>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now</span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="exp-card">
+            <img src="/images/Kedarnath.jpg" alt="" />
+            <div>
+              <div>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now </span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="exp-card">
+            <img src="/images/Vrindavan.jpg" alt="" />
+            <div>
+              <div>
+                <h4 class="card-name">Horseback Riding at Al Jazeera Equestruan Center</h4>
+              </div>
+              <div>
+                <hr>
+                <div class="book-now">
+                  <span>Book Now</span>
+                  <i class="fa-solid fa-chevron-down fa-rotate-270 fa-sm"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </a>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="experience">
+    <a class="bannerHover" href="">
+      <div class="banner">
+
+        <div>
+          <!-- BG COLOR -->
+        </div>
+        <img src="images/Varanasi.jpg" alt="">
+
+        <div class="bannerC">
+          <div>
+            <span>You are almost here</span>
+            <h1>Apply for your eVisa today</h1>
+          </div>
+          <span class="btn-white">Check Now</span>
+        </div>
+
+
+      </div>
+    </a>
+
+
+
+  </div>
+
+  <!-- Maps -->
+  <div class="maps">
+    Maps
+  </div>
+
+  <!-- //Footer -->
+  <img id="br" class="border" src="border.jpg" alt="">
+  <script src="script.js"></script>
+</body>
+
 </html>
