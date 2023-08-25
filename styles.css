@@ -198,7 +198,10 @@ li {
   top: 90%;
   left: 14.5%;
 }
-.nav-tab{
+.zero{
+  position: absolute;
+  top: 100%;
+  left: 0%;
   height: 0rem;
   max-height: 0rem;
   overflow: hidden;
