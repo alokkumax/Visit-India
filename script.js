@@ -60,9 +60,19 @@ $(".nav-tab").click(function (e) {
   }
 });
 function updateNavMenu(selectedNav) {
-  // $("#item" + 1).removeClass();
-  // $("#item" + 2).removeClass();
-  // $("#item" + 3).removeClass();
+  $("#item" + 1).removeClass("active-nav");
+  $("#item" + 2).removeClass("active-nav");
+  $("#item" + 3).removeClass("active-nav");
+  
+  // if($("#item" + 1).hasClass("active-nav")){
+  //   $("#item" + 1).removeClass("active-nav");
+  // }else if(
+  //   $("#item" + 2).removeClass("active-nav")
+  // ){
+  //   $("#item" + 2).removeClass("active-nav");
+  // }else if( $("#item" + 3).removeClass("active-nav")){
+  //   $("#item" + 3).removeClass("active-nav");
+  // }
 
   $("#item" + selectedNav)
     .addClass("active-nav")
