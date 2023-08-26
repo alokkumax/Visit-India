@@ -49,7 +49,7 @@ function updateActiveTab(clickedTab) {
 $(".nav-tab").click(function (e) {
   console.log($(this).attr("id"));
   if (
-    $("#item" + $(this).attr("id")).hasClass("active-nav-" + $(this).attr("id"))
+    $("#item" + $(this).attr("id")).hasClass("active-nav")
   ) {
     $("#item" + $(this).attr("id")).removeClass();
     $(this).removeClass();
@@ -60,12 +60,12 @@ $(".nav-tab").click(function (e) {
   }
 });
 function updateNavMenu(selectedNav) {
-  $("#item" + 1).removeClass();
-  $("#item" + 2).removeClass();
-  $("#item" + 3).removeClass();
+  // $("#item" + 1).removeClass();
+  // $("#item" + 2).removeClass();
+  // $("#item" + 3).removeClass();
 
   $("#item" + selectedNav)
-    .addClass("active-nav-" + selectedNav)
+    .addClass("active-nav")
     .css({ transform: "translateY(0px) rotateZ(0deg) ease-in" });
 }
 function updateNavTitle(selectedNavTitle) {
