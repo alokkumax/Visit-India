@@ -142,29 +142,50 @@ li {
   justify-content: start;
   padding: 0rem 0rem 5rem 10rem;
   align-items: center;
+  gap: 4rem;
 
 }
-.menu > ul {
+.menu > :first-child {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   padding: 0rem;
 }
-.menu > ul > li{
+.menu > :first-child > li{
   display: flex;
   flex-direction: row;
   gap: 15px;
   align-items: center;
   transition: transform 0.4s;
 }
-.menu > ul > li:hover{
+.menu > :first-child > li:hover{
   transform: translateX(7px);
   cursor: pointer;
 }
-.icon{
-  display: none!important;
+#CT > li{
+  transition: transform 0.4s;
 }
+#CT > li:hover{
+  transform: translateX(7px);
+  cursor: pointer;
+}
+.showCT{
+  /* display: none; */
+  border-left: 1px solid rgba(211, 211, 211, 0.527);
+  padding-left: 4rem;
+}
+.closeCT{
+  display: none;
+}
+.showCT > li {
+  line-height: 2rem;
+  font-size: small;
+  font-family: Poppins;
+}
+
+
+
 .menuDes{
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(187, 187, 187);
@@ -191,6 +212,40 @@ li {
     top: 5%;
   
 }
+
+.subMenu{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-self: center;
+}
+.subMenuActive{
+  display: flex;
+}
+.subMenu >:first-child{
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 4rem 0rem 0rem;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+.subMenu >:first-child > h3 {
+  color: #000;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.subMenu >:first-child > span {
+  color: #78006e;
+}
+
+
+
 
 .subMenu0{
   display: none;
