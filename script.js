@@ -51,7 +51,7 @@ $(".nav-tab").click(function (e) {
   if (
     $("#item" + $(this).attr("id")).hasClass("active-nav")
   ) {
-    $("#item" + $(this).attr("id")).removeClass();
+    $("#item" + $(this).attr("id")).removeClass("active-nav");
     $(this).removeClass();
   }
   else {
@@ -75,8 +75,7 @@ function updateNavMenu(selectedNav) {
   // }
 
   $("#item" + selectedNav)
-    .addClass("active-nav")
-    .css({ transform: "translateY(0px) rotateZ(0deg) ease-in" });
+    .addClass("active-nav");
 }
 function updateNavTitle(selectedNavTitle) {
   var clickedId = selectedNavTitle.slice(-1);
