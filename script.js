@@ -63,17 +63,6 @@ function updateNavMenu(selectedNav) {
   $("#item" + 1).removeClass("active-nav");
   $("#item" + 2).removeClass("active-nav");
   $("#item" + 3).removeClass("active-nav");
-  
-  // if($("#item" + 1).hasClass("active-nav")){
-  //   $("#item" + 1).removeClass("active-nav");
-  // }else if(
-  //   $("#item" + 2).removeClass("active-nav")
-  // ){
-  //   $("#item" + 2).removeClass("active-nav");
-  // }else if( $("#item" + 3).removeClass("active-nav")){
-  //   $("#item" + 3).removeClass("active-nav");
-  // }
-
   $("#item" + selectedNav)
     .addClass("active-nav");
 }
@@ -86,4 +75,38 @@ function updateNavTitle(selectedNavTitle) {
 }
 function toggleMenu(){
   $("#subMenu").toggleClass("open-menu");
+
+  
 }
+$(".cross").click(function (e) {
+  $("#item1").removeClass("active-nav");
+
+  $("#1").removeClass();
+});
+
+
+
+$("#list1").hover(function(e){
+  $(".subMenu1").removeClass("subMenu1Active");
+  $(".subMenu2").removeClass("subMenu2Active")
+  $(".subMenu0").addClass("subMenu0Active")
+  
+})
+$("#list4").hover(function(e){
+  $(".subMenu1").removeClass("subMenu1Active");
+  $(".subMenu2").removeClass("subMenu2Active")
+  $(".subMenu0").addClass("subMenu0Active")
+  
+})
+$("#list2").hover(function(e){
+  $(".subMenu1").addClass("subMenu1Active");
+  $(".subMenu2").removeClass("subMenu2Active")
+  $(".subMenu0").removeClass("subMenu0Active")
+  
+})
+$("#list3").hover(function(e){
+
+  $(".subMenu2").addClass("subMenu2Active");
+  $(".subMenu1").removeClass("subMenu1Active")
+  $(".subMenu0").removeClass("subMenu0Active")
+})
