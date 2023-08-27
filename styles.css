@@ -11,12 +11,10 @@ nav {
   position: fixed;
   z-index: 2;
   width: 100%;
-
 }
 .nav-first {
   /* background-color: rgb(85, 33, 168); */
   position: relative;
-
   display: flex;
   justify-content: space-between;
   font-size: 12px;
@@ -88,8 +86,6 @@ summary{
   align-items: center;
   font-size: 16px;
   font-family: Poppins;
-  /* position: relative; */
-
 }
 .nav-second > div > img {
   width: 4rem;
@@ -104,7 +100,6 @@ li {
 }
 /* OTHER SIDE */
 .nav-second > :last-child {
-  /* background-color: aqua; */
   padding: 0.5rem 0rem;
   gap: 1rem;
 }
@@ -125,7 +120,6 @@ li {
   cursor: pointer;
 }
 /* Nav-Details Section */
-
 .menu1{
   display:flex;
   color: rgb(255, 255, 255);
@@ -133,9 +127,7 @@ li {
   width: 100%;
   height: 100%;
   flex-direction: row;
-
 }
-
 .menu{
   display: flex;
   flex: 4;
@@ -184,8 +176,6 @@ li {
   font-family: Poppins;
 }
 
-
-
 .menuDes{
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(187, 187, 187);
@@ -194,7 +184,6 @@ li {
   width:100%;
   flex: 6;
   position:relative;
-  /* align-items: center; */
 }
 .cross {
   display:block;
@@ -243,8 +232,6 @@ li {
 .subMenu >:first-child > span {
   color: #78006e;
 }
-
-
 
 
 .subMenu0{
@@ -323,9 +310,6 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-
-
-
 
 
 .subMenu1{
