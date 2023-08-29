@@ -79,6 +79,9 @@ summary{
   position: relative;
   
 }
+.nav-second>:last-child>button:hover{
+  cursor: pointer;
+}
 .nav-second > div {
   display: flex;
   flex-direction: row;
@@ -118,6 +121,44 @@ li {
 }
 .nav-second > :last-child > a:hover {
   cursor: pointer;
+}
+/* NAV THIRD */
+.nav-third{
+  padding-inline: 8rem;
+  max-height: 0rem;
+  overflow: hidden;
+  transition: max-height 0.5s;
+
+}
+.active-Nav-3{
+  max-height: 6rem;
+}
+.nav-third>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  margin-bottom: 1rem;
+}
+.nav-third>div>i{
+  padding: 0px 16px;
+}
+.nav-third>div>input{
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  border: 0px solid gainsboro;
+  outline: 0px solid beige;
+
+}
+
+::placeholder {
+  color: rgb(97, 97, 97);
+  opacity: 1; 
+  font-size: 16px;
+  font-family: Poppins;
 }
 /* Nav-Details Section */
 .menu1{

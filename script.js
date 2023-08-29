@@ -73,8 +73,8 @@ function updateNavTitle(selectedNavTitle) {
   $("#" + 3).removeClass();
   $("#" + clickedId).addClass("active-tab" + clickedId);
 }
-function toggleMenu(){
-  $("#subMenu").toggleClass("open-menu");
+function toggleSearch(){
+  $("#search").toggleClass("active-Nav-3");
 }
 
 $(".cross").click(function (e) {
