@@ -93,6 +93,8 @@ $("#list4").hover(function(e){
   $(".subMenu1").removeClass("subMenu1Active");
   $(".subMenu2").removeClass("subMenu2Active")
   $(".subMenu0").addClass("subMenu0Active")
+  $(".subMenu").addClass("subMenuOff");
+
   $("#CT").removeClass("showCT")
   $("#CT").addClass("closeCT")
 
@@ -103,6 +105,8 @@ $("#list2").hover(function(e){
   $(".subMenu1").addClass("subMenu1Active");
   $(".subMenu2").removeClass("subMenu2Active")
   $(".subMenu0").removeClass("subMenu0Active")
+  $(".subMenu").addClass("subMenuOff");
+
   $("#CT").removeClass("showCT")
   $("#CT").addClass("closeCT")
 
@@ -115,6 +119,8 @@ $("#list3").hover(function(e){
   $(".subMenu2").addClass("subMenu2Active");
   $(".subMenu1").removeClass("subMenu1Active")
   $(".subMenu0").removeClass("subMenu0Active")
+  $(".subMenu").addClass("subMenuOff");
+
   $("#CT").removeClass("showCT")
   $("#CT").addClass("closeCT")
 
