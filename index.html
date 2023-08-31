@@ -335,8 +335,9 @@
             </div>
           </div>
         </div>
-
-        <li>Experiences</li>
+        <a style="text-decoration: none; color: black;" href="exp.html">
+          <li >Experiences</li>
+        </a>
         <li>India Map</li>
       </div>
       <div>
@@ -386,7 +387,7 @@
           <span class="btn-sec">Explore</span>
 
         </div>
-        <div id="Dakshineswar" class="hero-content">
+        <!-- <div id="Dakshineswar" class="hero-content">
           <h1>Dakshineswar</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
@@ -394,7 +395,7 @@
           </p>
           <span class="btn-sec">Explore</span>
 
-        </div>
+        </div> -->
 
         <div class="caro">
           <div class="image-container">
@@ -402,7 +403,7 @@
             <img id="Varanasi" class="img2" src="/images/Varanasi.jpg" alt="" />
             <img id="Vaishodevi" class="img3" src="/images/Vaishnodevi.jpg" alt="" />
             <img id="Vrindavan" class="img4" src="/images/Vrindavan.jpg" alt="" />
-            <img id="Dakshineswar" class="img5" src="/images/Dakshineshwar.jpg" alt="" />
+            <!-- <img id="Dakshineswar" class="img5" src="/images/Dakshineshwar.jpg" alt="" /> -->
           </div>
         </div>
       </div>
@@ -413,7 +414,7 @@
           <li class="hero-bottom-tab">Varanasi</li>
           <li class="hero-bottom-tab">Vaishodevi</li>
           <li class="hero-bottom-tab">Vrindavan</li>
-          <li class="hero-bottom-tab">Dakshineswar</li>
+          <!-- <li class="hero-bottom-tab">Dakshineswar</li> -->
         </ul>
       </div>
     </div>
@@ -543,11 +544,6 @@
     </div>
   </div>
 
-
-  <div class="gallery">
-    Gallery Image here
-  </div>
-
   <!-- Banner -->
   <div class="experience">
     <a class="bannerHover" href="">
@@ -650,7 +646,31 @@
       </a>
     </div>
   </div>
-
+  <div class="gallery">
+    <div>
+      <img class="slide" src="https://picsum.photos/id/232/1000/500" alt="">
+      <img class="slide" src="https://picsum.photos/id/237/1000/500" alt="">
+      <img class="slide" src="https://picsum.photos/id/234/1000/500" alt="">
+      <img class="slide" src="https://picsum.photos/id/238/1000/500"  alt="">
+    </div>
+    <div class="preview">
+      <img class="slideP" src="https://picsum.photos/id/237/1000/500" alt="">
+      <img class="slideP" src="https://picsum.photos/id/234/1000/500" alt="">
+      <img class="slideP" src="https://picsum.photos/id/238/1000/500"  alt="">
+      <img class="slideP" src="https://picsum.photos/id/232/1000/500" alt="">
+    </div>
+    <div class="headingSlide">
+      <h1>Destinations in India</h1>
+    </div>
+    <div class="slideControl">
+      <button onclick="goPrev()">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button onclick="goNext()">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
   <!-- Banner -->
   <div class="experience">
     <a class="bannerHover" href="">
@@ -684,7 +704,13 @@
 
   <!-- //Footer -->
   <img id="br" class="border" src="border.jpg" alt="">
+ 
+
+
   <script src="script.js"></script>
+  
+  
+
 </body>
 
 </html>

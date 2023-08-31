@@ -2,6 +2,7 @@ $(".hero-bottom-tab").click(function (e) {
   updateDiv($(this).html()); // sending as element's HTML
   updateActiveTab($(this)); // Sending as a e
 });
+
 $("img").click(function (e) {
   var prev = $(".img1").attr("class");
   var clicked = $(this).attr("class");
@@ -81,47 +82,85 @@ $(".cross").click(function (e) {
   $("#item1").removeClass("active-nav");
   $("#1").removeClass();
 });
-
 $("#list1").hover(function(e){
   $("#CT").addClass("showCT")
   $("#CT").removeClass("closeCT")
   $(".subMenu1").removeClass("subMenu1Active");
   $(".subMenu2").removeClass("subMenu2Active")
-  
 })
 $("#list4").hover(function(e){
   $(".subMenu1").removeClass("subMenu1Active");
   $(".subMenu2").removeClass("subMenu2Active")
   $(".subMenu0").addClass("subMenu0Active")
   $(".subMenu").addClass("subMenuOff");
-
   $("#CT").removeClass("showCT")
   $("#CT").addClass("closeCT")
-
-
-  
 })
 $("#list2").hover(function(e){
   $(".subMenu1").addClass("subMenu1Active");
   $(".subMenu2").removeClass("subMenu2Active")
   $(".subMenu0").removeClass("subMenu0Active")
   $(".subMenu").addClass("subMenuOff");
-
   $("#CT").removeClass("showCT")
   $("#CT").addClass("closeCT")
-
-
-
-  
 })
 $("#list3").hover(function(e){
-
   $(".subMenu2").addClass("subMenu2Active");
   $(".subMenu1").removeClass("subMenu1Active")
   $(".subMenu0").removeClass("subMenu0Active")
   $(".subMenu").addClass("subMenuOff");
-
   $("#CT").removeClass("showCT")
   $("#CT").addClass("closeCT")
-
 })
+
+
+//  iMAGE sLIDE / 
+const slides = document.querySelectorAll(".slide");
+const slidesP = document.querySelectorAll(".slideP");
+var counter = 0;
+var counterP = 0;
+console.log(slides);
+slides.forEach(
+  (slide, index)=>{
+    slide.style.left = `${index * 100}%`
+  }
+)
+slidesP.forEach(
+  (slide, index)=>{
+    slide.style.left = `${index * 100}%`
+  }
+)
+function goPrev(){
+  if(counter===0){
+    counter = slides.length-1;
+    counterP = slides.length-1;
+  }else{
+    counter--;
+    counterP--;
+  }
+  slideImage()
+  slidePImage()
+}
+function goNext(){
+  if(counter===3){
+    counter = 0;
+    counterP = 0;
+  }else{
+    counter++;
+    counterP++;
+  }
+  slideImage()
+  slidePImage()
+}
+function slideImage(){
+  slides.forEach((slide)=>{
+    slide.style.transform =   `translateX(-${counter*100}%)`
+    slide.style.transition =   `900ms ease-in-out`
+  })
+}
+function slidePImage(){
+  slidesP.forEach((slide)=>{
+    slide.style.transform =   `translateX(-${counterP*100}%)`
+    slide.style.transition =   `900ms ease-in-out`
+  })
+}
